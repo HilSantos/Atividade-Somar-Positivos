@@ -9,22 +9,22 @@ using System.Threading.Tasks;
 
 namespace Ativ.WhileSomarPositivos
 {
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            int op, cont, numero, i = 1;
+public class Program
+{
+static void Main(string[] args)
+{
+int op, cont, numero, i = 1;
 
-            Console.WriteLine("Digite o numero: ");
-            numero = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Digite o numero: ");
+numero = Convert.ToInt32(Console.ReadLine());
 
-            while (i <= 0)
-            {
-                Console.WriteLine($"{i}+{i}={i + i}");
-                i++
-            }
+while (i <= 0)
+{
+Console.WriteLine($"{i}+{i}={i + i}");
+i++
+}
 
-            Console.ReadKey();
-        }
-    }
+Console.ReadKey();
+}
+}
 }
