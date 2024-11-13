@@ -13,18 +13,21 @@ public class Program
 {
 static void Main(string[] args)
 {
-int op, cont, numero, i = 1;
+            int soma = 0;
+            int numero;
 
-Console.WriteLine("Digite o numero: ");
-numero = Convert.ToInt32(Console.ReadLine());
+  Console.Write("Digite um número positivo (ou um negativo para parar): ");
+            numero = int.Parse(Console.ReadLine());
 
-while (i <= 0)
-{
-Console.WriteLine($"{i}+{i}={i + i}");
-i++
-}
+  while (numero >= 0)
+            {
+                soma += numero;
+                Console.Write("Digite outro número positivo (ou um negativo para parar): ");
+                numero = int.Parse(Console.ReadLine());
+            }
 
-Console.ReadKey();
-}
-}
+  Console.WriteLine($"A soma dos números positivos é: {soma}");
+            Console.ReadKey();
+        }
+    }
 }
